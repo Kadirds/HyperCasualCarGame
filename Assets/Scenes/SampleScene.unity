@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945a654a263d6c442a86454631739968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.87
+  speed: 3.42
   turnspeed: 20.6
 --- !u!1 &705507993
 GameObject:
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892c2adbf8ad8d7448572b4c0607faa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 120
+  speed: 3000
 --- !u!1 &1462985680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100042, guid: d1e985c0fb2658c4bb66c0dd53fe253c, type: 3}
@@ -639,4 +639,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892c2adbf8ad8d7448572b4c0607faa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 120
+  speed: 3000

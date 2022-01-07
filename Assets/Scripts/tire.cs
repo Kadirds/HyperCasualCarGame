@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class tire : MonoBehaviour
 {
-    public float speed = 120.0f;
+    public float Speed = 3000f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class tire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.right * Time.deltaTime * speed);
+        transform.Rotate(Vector3.right * Time.deltaTime * Speed);
     }
 }
