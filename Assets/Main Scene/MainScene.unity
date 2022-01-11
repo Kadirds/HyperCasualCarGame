@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -356,6 +356,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.42
   turnspeed: 20.6
+--- !u!114 &608644938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608644936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb11d909a4ea184eb0ae7ee1648d00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartP: {fileID: 0}
+  InGameP: {fileID: 0}
+  NextP: {fileID: 0}
+  GameOverP: {fileID: 0}
+  CountDown: 2
+  asynSceneIndex: 1
+  gamestate: 0
 --- !u!54 &608644940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -669,6 +688,8 @@ MonoBehaviour:
   NextP: {fileID: 0}
   GameOverP: {fileID: 0}
   CountDown: 2
+  asynSceneIndex: 1
+  gamestate: 0
 --- !u!1 &1418691046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100036, guid: d1e985c0fb2658c4bb66c0dd53fe253c, type: 3}

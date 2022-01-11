@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,21 +19,21 @@ public class GameManager : MonoBehaviour
 
 
     }
-    public GameState gamestate;
+    public GameState Gamestate;
     public enum Panels
     {
         Startp,
-        Ingame,
+        Ingamep,
         Nextp,
         Gameoverp,
     }
     private void Start()
     {
-        gamestate = GameState.Start;
+        Gamestate = GameState.Start;
     }
     private void Update()
     {
-        switch (gamestate)
+        switch (Gamestate)
         {
             case GameState.Start:
                 break;
