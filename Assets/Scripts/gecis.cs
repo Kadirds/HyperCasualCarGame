@@ -11,7 +11,6 @@ public class gecis : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
-        Debug.Log(Singleton.Instance.deger);
-        Debug.Log(Singleton.Instance.speed);
+        
     }
 }

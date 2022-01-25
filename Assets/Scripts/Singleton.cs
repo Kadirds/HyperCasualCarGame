@@ -12,11 +12,13 @@ public class Singleton : MonoBehaviour
             if (_instance == null)
             {
                 _instance = FindObjectOfType<Singleton>();
+                if (_instance == null)
+                {
+                    _instance = new GameObject("Game Manager").AddComponent<Singleton>();
+
+                }
             }
-            if (_instance == null)
-            {
-                _instance = new GameObject("Game Manager").AddComponent<Singleton>();
-            }
+            
             return _instance;
         }      
     }
