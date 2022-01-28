@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
 
     public GameObject StartP, InGameP, NextP, GameOverP;
-    public float countDown = 2F;
+    public float countDown = 1F;
 
     [SerializeField] private int asynSceneIndex = 1;
     public float speed = 5;
@@ -80,6 +81,15 @@ public class GameManager : MonoBehaviour
     void GameStart()
     {
         PanelController(Panels.Startp);
+        if (Input.anyKeyDown)
+        {
+            gameState = GameState.Ingame;
+        }
+        if (SceneManager.sceneCount < 2)
+        {
+            SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
+        }
+
     }
     void GameInGame()
     {
@@ -91,16 +101,36 @@ public class GameManager : MonoBehaviour
     }
     void GameOver()
     {
-        PanelController(Panels.Gameoverp);
+        countDown -= Time.deltaTime;
+        if (countDown < 0)
+           PanelController(Panels.Gameoverp);
+        
+        
     }
 
     public void RestartButton()
     {
-
+        SceneManager.UnloadSceneAsync(asynSceneIndex);
+        gameState = GameState.Start;
     }
 
     public void NextLevelButton()
     {
-
+        if (SceneManager.sceneCountInBuildSettings == asynSceneIndex + 1)
+        {
+            SceneManager.UnloadSceneAsync(asynSceneIndex);
+            asynSceneIndex = 1;
+            SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
+        }
+        else
+        {
+            if (SceneManager.sceneCount > 1)
+            {
+                SceneManager.UnloadSceneAsync(asynSceneIndex);
+                asynSceneIndex++;
+            }
+            SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
+        }
+        gameState = GameState.Start;
     }
 }
