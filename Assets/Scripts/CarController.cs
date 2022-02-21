@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CarController : MonoBehaviour
-{        
+{
+   
     public float speed;
     private float horizontalMove;
     [SerializeField]private float accelSpeed;
@@ -22,7 +23,7 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {       
-
+        
         //horizontalMove = Input.GetAxis("Horizontal");
         car.velocity = new Vector3 (horizontalSpeed * horizontalMove,0,speed); 
     }
@@ -39,4 +40,6 @@ public class CarController : MonoBehaviour
     {
         horizontalMove = 0;
     }
+
+
 }
