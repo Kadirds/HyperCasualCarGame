@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-   
+    bool fail;
     public float speed;
     private float horizontalMove;
     [SerializeField]private float accelSpeed;
@@ -22,8 +22,12 @@ public class CarController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {       
-        
+    {
+        if (fail == true)
+        {
+            speed = 0;
+        }
+
         //horizontalMove = Input.GetAxis("Horizontal");
         car.velocity = new Vector3 (horizontalSpeed * horizontalMove,0,speed); 
     }
@@ -41,5 +45,12 @@ public class CarController : MonoBehaviour
         horizontalMove = 0;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            fail = true;
+        }
+    }
 
 }
