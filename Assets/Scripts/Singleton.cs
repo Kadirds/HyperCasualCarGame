@@ -2,32 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton : MonoBehaviour
+public class Singleton<T> : MonoBehaviour where T : Component
 {
-  private static Singleton _instance;
-   public static Singleton Instance
+    private static T _instance;
+
+    public static T Instance
     {
         get
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType<Singleton>();
+                var objs = FindObjectOfType(typeof(T)) as T [];
+                if (objs != null && objs.Length > 0)
+                    _instance = objs[0];
                 if (_instance == null)
                 {
-                    _instance = new GameObject("Game Manager").AddComponent<Singleton>();
-
+                    GameObject obj = new GameObject(typeof(T).Name);
+                    _instance = obj.AddComponent<T>();
                 }
             }
-            
-            return _instance;
-        }      
-    }
-    public int deger = 10;
-    public float speed = 13.4f;
-    private void Awake()
-    {
-        if (_instance != null) Destroy(this);
-        DontDestroyOnLoad(this);
-
+            return _instance;   
+        }
     }
 }
+
