@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Engine
+  - SedanCar
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UP
+    uniqueID: 2374692227
+    locked: 0
+  - name: Back
+    uniqueID: 1461909477
     locked: 0
