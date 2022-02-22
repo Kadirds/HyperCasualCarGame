@@ -51,6 +51,7 @@ public class GameManager : Singleton<GameManager>
             case GameState.Gameover: GameOver(); 
                 break;
         }
+        
     }
 
     void PanelController(Panels currentPanel)
