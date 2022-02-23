@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CarController : MonoBehaviour
 {
     bool fail;
@@ -23,9 +24,13 @@ public class CarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+
         if (fail == true)
         {
+
             speed = 0;
+            horizontalSpeed = 0;
         }
 
         //horizontalMove = Input.GetAxis("Horizontal");
@@ -50,7 +55,16 @@ public class CarController : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             fail = true;
+            Death();
         }
+
+        
     }
 
+    void Death()
+    {
+        
+      GameManager.Instance.gameState = GameManager.GameState.Gameover;
+
+    }
 }

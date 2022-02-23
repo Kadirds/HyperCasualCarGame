@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
 
-
+    public CarController Carspeed;
     public GameObject StartP, InGameP, NextP, GameOverP;
     public float countDown = 1F;
 
@@ -37,6 +37,8 @@ public class GameManager : Singleton<GameManager>
     }
     private void Update()
     {
+
+       
         switch (gameState)
         {
             case GameState.Start: GameStart();
