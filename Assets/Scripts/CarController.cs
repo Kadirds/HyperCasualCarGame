@@ -70,15 +70,11 @@ public class CarController : MonoBehaviour
 
     void Finish()
     {
-
         GameManager.Instance.gameState = GameManager.GameState.Next;
-
     }
 
     void Death()
     {
-        
-      GameManager.Instance.gameState = GameManager.GameState.Gameover;
-
+        GameManager.Instance.gameState = GameManager.GameState.Gameover;
     }
 }
