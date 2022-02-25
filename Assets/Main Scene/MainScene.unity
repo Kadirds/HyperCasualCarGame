@@ -958,7 +958,7 @@ MonoBehaviour:
   InGameP: {fileID: 642352046}
   NextP: {fileID: 1221147834}
   GameOverP: {fileID: 1960529767}
-  countDown: 0
+  countDown: 1
   asynSceneIndex: 1
   speed: 5
   gameState: 0

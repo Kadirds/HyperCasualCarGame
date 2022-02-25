@@ -52,6 +52,12 @@ public class CarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Finish"))
+        {
+            Finish();
+            speed = 0;
+        }
+
         if (other.CompareTag("Obstacle"))
         {
             fail = true;
@@ -59,6 +65,14 @@ public class CarController : MonoBehaviour
         }
 
         
+    }
+
+
+    void Finish()
+    {
+
+        GameManager.Instance.gameState = GameManager.GameState.Next;
+
     }
 
     void Death()
