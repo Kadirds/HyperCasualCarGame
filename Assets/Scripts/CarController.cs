@@ -10,6 +10,7 @@ public class CarController : MonoBehaviour
     private float horizontalMove;
     [SerializeField]private float accelSpeed;
     [SerializeField] float horizontalSpeed;
+    AudioSource arabasesi;
  
 
 
@@ -19,11 +20,12 @@ public class CarController : MonoBehaviour
     void Start()
     {
         car = GetComponent<Rigidbody>();
+        arabasesi = gameObject.GetComponent<AudioSource>();
         
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
        
 
@@ -32,23 +34,31 @@ public class CarController : MonoBehaviour
 
             speed = 0;
             horizontalSpeed = 0;
+            arabasesi.Stop();
         }
 
         //horizontalMove = Input.GetAxis("Horizontal");
-        car.velocity = new Vector3 (horizontalSpeed * horizontalMove,0,speed); 
+        car.velocity = new Vector3 (horizontalSpeed * horizontalMove,0,speed);
+        //arabasesi.Play();
     }
 
     public void Left()
     {
         horizontalMove = - 1;
+        arabasesi.Play();
+
     }
     public void Right()
     {
         horizontalMove = 1;
+        arabasesi.Play();
     }
     public void Stop()
     {
         horizontalMove = 0;
+        arabasesi.Play();
+       
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -57,6 +67,8 @@ public class CarController : MonoBehaviour
         {
             Finish();
             speed = 0;
+            arabasesi.Stop();
+
         }
 
         if (other.CompareTag("Obstacle"))
@@ -81,4 +93,9 @@ public class CarController : MonoBehaviour
       GameManager.Instance.gameState = GameManager.GameState.Gameover;
 
     }
+   /* void SesOynat()
+    {
+
+    }
+   */
 }
