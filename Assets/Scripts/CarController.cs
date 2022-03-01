@@ -10,6 +10,7 @@ public class CarController : MonoBehaviour
     private float horizontalMove;
     [SerializeField]private float accelSpeed;
     [SerializeField] float horizontalSpeed;
+ 
 
 
     private Rigidbody car;
@@ -66,7 +67,6 @@ public class CarController : MonoBehaviour
 
         
     }
-
 
     void Finish()
     {

@@ -7,12 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
 
-    public CarController Carspeed;
+    
     public GameObject StartP, InGameP, NextP, GameOverP;
     public float countDown = 1F;
 
     [SerializeField] private int asynSceneIndex = 1;
-    public float speed = 5;
 
     public enum GameState{
         
