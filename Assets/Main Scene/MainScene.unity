@@ -953,14 +953,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb11d909a4ea184eb0ae7ee1648d00d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Carspeed: {fileID: 0}
   StartP: {fileID: 1284741564}
   InGameP: {fileID: 642352046}
   NextP: {fileID: 1221147834}
   GameOverP: {fileID: 1960529767}
   countDown: 1
   asynSceneIndex: 1
-  speed: 5
   gameState: 0
 --- !u!1 &1221147834
 GameObject:

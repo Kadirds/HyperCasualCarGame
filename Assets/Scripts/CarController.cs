@@ -34,7 +34,6 @@ public class CarController : MonoBehaviour
 
             speed = 0;
             horizontalSpeed = 0;
-            arabasesi.Stop();
         }
 
         //horizontalMove = Input.GetAxis("Horizontal");
@@ -45,19 +44,15 @@ public class CarController : MonoBehaviour
     public void Left()
     {
         horizontalMove = - 1;
-        arabasesi.Play();
 
     }
     public void Right()
     {
         horizontalMove = 1;
-        arabasesi.Play();
     }
     public void Stop()
     {
-        horizontalMove = 0;
-        arabasesi.Play();
-       
+        horizontalMove = 0; 
 
     }
 
@@ -67,7 +62,6 @@ public class CarController : MonoBehaviour
         {
             Finish();
             speed = 0;
-            arabasesi.Stop();
 
         }
 
@@ -93,9 +87,4 @@ public class CarController : MonoBehaviour
       GameManager.Instance.gameState = GameManager.GameState.Gameover;
 
     }
-   /* void SesOynat()
-    {
-
-    }
-   */
 }
