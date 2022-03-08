@@ -8,43 +8,41 @@ public class CarController : MonoBehaviour
     bool fail;
     public float speed;
     private float horizontalMove;
-    [SerializeField]private float accelSpeed;
+    [SerializeField] private float accelSpeed;
     [SerializeField] float horizontalSpeed;
-    AudioSource arabasesi;
- 
+    [SerializeField] float turningStrength;
+    private bool isPressing;
 
 
-    private Rigidbody car;
 
-    // Start is called before the first frame update
+    public Rigidbody car;
+
     void Start()
     {
-        car = GetComponent<Rigidbody>();
-        arabasesi = gameObject.GetComponent<AudioSource>();
-        
+        car.GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-       
+        transform.position = car.transform.position;
 
+
+        car.AddForce(transform.forward * speed * 400);
+        //new Vector3 (horizontalSpeed * horizontalMove,0,speed);
         if (fail == true)
         {
-
             speed = 0;
             horizontalSpeed = 0;
-        }
 
-        //horizontalMove = Input.GetAxis("Horizontal");
-        car.velocity = new Vector3 (horizontalSpeed * horizontalMove,0,speed);
-        //arabasesi.Play();
+        }
     }
 
     public void Left()
     {
-        horizontalMove = - 1;
 
+        //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, turningStrength * Time.deltaTime,0f));
     }
     public void Right()
     {
@@ -52,7 +50,8 @@ public class CarController : MonoBehaviour
     }
     public void Stop()
     {
-        horizontalMove = 0; 
+
+        horizontalMove = 0;
 
     }
 
@@ -69,10 +68,9 @@ public class CarController : MonoBehaviour
         {
             fail = true;
             Death();
-            FindObjectOfType<AudioManager>().Play("arabakazasi");
         }
 
-        
+
     }
 
     void Finish()
@@ -84,8 +82,8 @@ public class CarController : MonoBehaviour
 
     void Death()
     {
-        
-      GameManager.Instance.gameState = GameManager.GameState.Gameover;
+
+        GameManager.Instance.gameState = GameManager.GameState.Gameover;
 
     }
 }
