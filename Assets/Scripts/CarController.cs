@@ -69,6 +69,7 @@ public class CarController : MonoBehaviour
         {
             fail = true;
             Death();
+            FindObjectOfType<AudioManager>().Play("arabakazasi");
         }
 
         
