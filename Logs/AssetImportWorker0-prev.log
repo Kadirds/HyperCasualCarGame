@@ -65,17 +65,23 @@ C:/Users/Administrator/Documents/GitHub/HyperCasualCarGame
 Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< HEAD
+<<<<<<< HEAD
 60138
 Successfully changed project path to: C:/Users/Administrator/Documents/GitHub/HyperCasualCarGame
 C:/Users/Administrator/Documents/GitHub/HyperCasualCarGame
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 38.43 ms, found 2 plugins.
 =======
+=======
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 58376
 Successfully changed project path to: D:/GameProjects/HyperCasualCarGame/CarGame
 D:/GameProjects/HyperCasualCarGame/CarGame
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 45.25 ms, found 2 plugins.
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
@@ -128,12 +134,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (702ms)
 		BeginReloadAssembly (110ms)
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 		EndReloadAssembly (404ms)
@@ -176,11 +186,25 @@ Domain Reload Profiling:
 			SetupLoadedEditorAssemblies (192ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
+=======
+		EndReloadAssembly (508ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (178ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (40ms)
 				BeforeProcessingInitializeOnLoad (18ms)
 				ProcessInitializeOnLoadAttributes (97ms)
 				ProcessInitializeOnLoadMethodAttributes (32ms)
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -188,6 +212,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 Registered in 0.001381 seconds.
@@ -219,6 +244,12 @@ Registered in 0.003415 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+=======
+Registered in 0.003415 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -226,11 +257,15 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1086ms)
 		BeginReloadAssembly (186ms)
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 			CreateAndSetChildDomain (17ms)
@@ -277,6 +312,17 @@ Domain Reload Profiling:
 			RebuildScriptCaches (48ms)
 			SetupLoadedEditorAssemblies (311ms)
 				LogAssemblyErrors (0ms)
+=======
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (842ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (294ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
@@ -284,6 +330,9 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (215ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (2ms)
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -291,6 +340,7 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
@@ -317,12 +367,20 @@ Total: 2.637000 ms (FindLiveObjects: 0.122600 ms CreateObjectMapping: 0.035000 m
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
 Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 Unloading 1513 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 70.0 MB.
 System memory in use after: 70.1 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1956.
 Total: 3.007000 ms (FindLiveObjects: 0.126000 ms CreateObjectMapping: 0.056100 ms MarkObjects: 2.723400 ms  DeleteObjects: 0.100400 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -337,6 +395,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
   path: Assets/levels/bölüm2.blend
@@ -1705,6 +1764,66 @@ Received Import Request.
   artifactKey: Guid(2c5292ba5cf254919a6b9e2b18e04f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/CasualGameSounds/DM-CGS-07.wav using Guid(2c5292ba5cf254919a6b9e2b18e04f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06eeab248efb460fa38b0ac3309a0ac1') in 0.041371 seconds 
 ========================================================================
+=======
+  path: Assets/CasualGameSounds/DM-CGS-18.wav
+  artifactKey: Guid(2667a0a008b044e218b63df62e2be749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-18.wav using Guid(2667a0a008b044e218b63df62e2be749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27ce68d76314a1d8f7e92b3d8704445') in 0.246162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-16.wav
+  artifactKey: Guid(724131bc8a7f34041bb9f1701f0cb58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-16.wav using Guid(724131bc8a7f34041bb9f1701f0cb58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331850add5e68671718242571f1b9d11') in 0.042791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-19.wav
+  artifactKey: Guid(81652031b64c342cc8dbc59c138d77c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-19.wav using Guid(81652031b64c342cc8dbc59c138d77c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5dd1574f30486ed7b360d064a20329e') in 0.036233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-12.wav
+  artifactKey: Guid(7478151cf36724a7dada558f746c3633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-12.wav using Guid(7478151cf36724a7dada558f746c3633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e4c518164791932f46799034dbc487') in 0.041252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/BlenderLevels/bölüm3.blend
+  artifactKey: Guid(7bc866692881084498bce01e3ad220f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BlenderLevels/bölüm3.blend using Guid(7bc866692881084498bce01e3ad220f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024018f8f4932af9da2c7a2ea0ca3fb6') in 0.548904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-11.wav
+  artifactKey: Guid(a0010a1a0c474473b81729eb770c485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-11.wav using Guid(a0010a1a0c474473b81729eb770c485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ff9059a4608e7441a03ee168e2d4f1') in 0.030104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-10.wav
+  artifactKey: Guid(cabfae866cab347928b74b7d0ca6bfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-10.wav using Guid(cabfae866cab347928b74b7d0ca6bfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7684bd3c085829fa8872543320209c') in 0.040090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-17.wav
+  artifactKey: Guid(b9eff218e132a4e76be78840eca96fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-17.wav using Guid(b9eff218e132a4e76be78840eca96fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b36116ab44f18397da7a8ccb5602903') in 0.069527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-15.wav
+  artifactKey: Guid(0c008ee3ee72a4362a35be25fa5de043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-15.wav using Guid(0c008ee3ee72a4362a35be25fa5de043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb71a2c6797ef22fcca316853fb4c9e2') in 0.053350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/CasualGameSounds/DM-CGS-07.wav
+  artifactKey: Guid(2c5292ba5cf254919a6b9e2b18e04f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CasualGameSounds/DM-CGS-07.wav using Guid(2c5292ba5cf254919a6b9e2b18e04f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06eeab248efb460fa38b0ac3309a0ac1') in 0.041371 seconds 
+========================================================================
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 Received Import Request.
   Time since last request: 0.000333 seconds.
   path: Assets/CasualGameSounds/DM-CGS-08.wav
@@ -1770,5 +1889,8 @@ Received Import Request.
   path: Assets/CasualGameSounds/DM-CGS-02.wav
   artifactKey: Guid(dc6614beca09347ec9b258f12d154bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/CasualGameSounds/DM-CGS-02.wav using Guid(dc6614beca09347ec9b258f12d154bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52d1ab20ea1d948f35665805e282865') in 0.027888 seconds 
+<<<<<<< HEAD
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
+=======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

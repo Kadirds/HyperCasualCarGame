@@ -354,6 +354,7 @@ MonoBehaviour:
   carSpeed: 1300
   maxSpeed: 1500
 <<<<<<< HEAD
+<<<<<<< HEAD
   dragAmount: 0.3
   steerAngle: 1.5
   _moveVec: {x: 0, y: 0, z: 0}
@@ -362,6 +363,11 @@ MonoBehaviour:
 <<<<<<< Updated upstream
 =======
   AudioManager: {fileID: 0}
+=======
+  steerAngle: 2
+  LeftWheel: {fileID: 0}
+  RightWheel: {fileID: 0}
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 =======
   steerAngle: 2
   LeftWheel: {fileID: 0}

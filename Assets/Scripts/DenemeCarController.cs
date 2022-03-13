@@ -21,7 +21,10 @@ public class DenemeCarController : MonoBehaviour
 
     public AudioManager AudioManager;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
     
     void FixedUpdate()
     {
@@ -38,11 +41,16 @@ public class DenemeCarController : MonoBehaviour
         _rotVec = Vector3.ClampMagnitude(_rotVec, steerAngle);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             LeftWheel.localRotation = Quaternion.Euler(_rotVec);
             RightWheel.localRotation = Quaternion.Euler(_rotVec);
         }
         
         
+=======
+        LeftWheel.localRotation = Quaternion.Euler(_rotVec);
+        RightWheel.localRotation = Quaternion.Euler(_rotVec);
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 =======
         LeftWheel.localRotation = Quaternion.Euler(_rotVec);
         RightWheel.localRotation = Quaternion.Euler(_rotVec);
@@ -62,6 +70,7 @@ public class DenemeCarController : MonoBehaviour
         horizontalMove = 0;
 
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     void Finish()
     {
@@ -88,6 +97,8 @@ public class DenemeCarController : MonoBehaviour
        
         
     }
+=======
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 =======
 >>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 
