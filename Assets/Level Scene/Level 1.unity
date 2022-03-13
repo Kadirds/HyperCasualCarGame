@@ -301,7 +301,6 @@ GameObject:
   - component: {fileID: 29195496}
   - component: {fileID: 29195495}
   - component: {fileID: 29195498}
-  - component: {fileID: 29195497}
   m_Layer: 0
   m_Name: SedanMustangCar
   m_TagString: Untagged
@@ -323,7 +322,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &29195496
 Transform:
@@ -340,20 +339,6 @@ Transform:
   m_Father: {fileID: 625465454}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &29195497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29195494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ebbee9c7f8c5464eac6491e034ac8c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  CarController: {fileID: 29195498}
 --- !u!114 &29195498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,11 +353,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carSpeed: 1300
   maxSpeed: 1500
+<<<<<<< HEAD
   dragAmount: 0.3
   steerAngle: 1.5
   _moveVec: {x: 0, y: 0, z: 0}
   LeftWheel: {fileID: 5067931531356216541}
   RightWheel: {fileID: 2015819505466653930}
+=======
+  steerAngle: 2
+  LeftWheel: {fileID: 0}
+  RightWheel: {fileID: 0}
+--- !u!1 &62281151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5148817236446094103, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+  m_PrefabInstance: {fileID: 1502960173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &62281153
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62281151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4579454407841743219, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 --- !u!1001 &65039414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -867,6 +877,96 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!1 &258018355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4767400413853537203, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+  m_PrefabInstance: {fileID: 263867682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &258018359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258018355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.487652, y: 2, z: 5.684344e-14}
+  m_Center: {x: -9.743826, y: 0.0000011615546, z: 3.1886582e-14}
+--- !u!1001 &263867682
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.175771
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.175771
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.175771
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -84.38
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.80407
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -43.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+      propertyPath: m_Name
+      value: "B\xD6L\xDCM1"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66e715d56473f204c99f4c420e53f8b2, type: 3}
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 --- !u!1001 &280364225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2514,7 +2614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 29195496}
-  offset: {x: 8, y: 32.9, z: -26.85}
+  offset: {x: 8.2, y: 30, z: -21.6}
   m_FollowSpeed: 3
 --- !u!1 &974871547
 GameObject:
@@ -3354,6 +3454,78 @@ Transform:
   m_Father: {fileID: 625465454}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1502960173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 24.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -84.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 103.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+      propertyPath: m_Name
+      value: untitled (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d658cd681e3948c41a20f40b43855175, type: 3}
+>>>>>>> parent of 8e88e40 (Emulator eklendi ve kontroller düzenlendi.)
 --- !u!1 &1513585957
 GameObject:
   m_ObjectHideFlags: 0
