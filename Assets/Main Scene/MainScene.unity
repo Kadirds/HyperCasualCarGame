@@ -1507,6 +1507,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: fail
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 363b2421a49753c4ab01726aa22da1a2, type: 3}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: acc
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270760768017759319, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7df7896fb0e3f234daca2d8f8b63b173, type: 3}
 --- !u!4 &4270760768231630038 stripped

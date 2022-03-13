@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class DenemeCarController : MonoBehaviour
 {
-
+    bool ToggleChange;
     bool fail;
     private float horizontalMove;
     [SerializeField] float carSpeed;
@@ -18,10 +19,8 @@ public class DenemeCarController : MonoBehaviour
 
     public Transform LeftWheel, RightWheel;
 
-    void Start()
-    {
-        
-    }
+    public AudioManager AudioManager;
+
 
 
     void FixedUpdate()
@@ -43,6 +42,7 @@ public class DenemeCarController : MonoBehaviour
             LeftWheel.localRotation = Quaternion.Euler(_rotVec);
             RightWheel.localRotation = Quaternion.Euler(_rotVec);
         }
+        
         
     }
     public void Left()
@@ -71,6 +71,18 @@ public class DenemeCarController : MonoBehaviour
 
         GameManager.Instance.gameState = GameManager.GameState.Gameover;
 
+        if (carSpeed==0)
+
+        {
+            FindObjectOfType<AudioManager>().Play("fail");
+
+            FindObjectOfType<AudioManager>().Stop("acc");
+        }
+
+       
+
+       
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -85,6 +97,7 @@ public class DenemeCarController : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             fail = true;
+            carSpeed = 0;
             Death();
         }
     }
