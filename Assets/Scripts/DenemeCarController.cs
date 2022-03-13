@@ -9,12 +9,12 @@ public class DenemeCarController : MonoBehaviour
     private float horizontalMove;
     [SerializeField] float carSpeed;
     [SerializeField] float maxSpeed;
-    float dragAmount = 0.3f;
+    [HideInInspector]public float dragAmount = 0.3f;
 
-    [SerializeField] float steerAngle;
+    public float steerAngle;
 
     Vector3 _rotVec;
-    Vector3 _moveVec;
+    [HideInInspector] public Vector3 _moveVec;
 
     public Transform LeftWheel, RightWheel;
 
@@ -23,23 +23,27 @@ public class DenemeCarController : MonoBehaviour
         
     }
 
-    
+
     void FixedUpdate()
     {
-        _moveVec += transform.forward * carSpeed * Time.deltaTime;
-        transform.position += _moveVec * Time.deltaTime;
+        if (GameManager.Instance.gameState == GameManager.GameState.Ingame)
+        {
+            _moveVec += transform.forward * carSpeed * Time.deltaTime;
+            transform.position += _moveVec * Time.deltaTime;
+
+            //transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * steerAngle * Time.deltaTime * _moveVec.magnitude);
+
+            _moveVec *= dragAmount;
+            _moveVec = Vector3.ClampMagnitude(_moveVec, maxSpeed);
+
+
+            _rotVec += new Vector3(0, Input.GetAxis("Horizontal"), 0);
+            _rotVec = Vector3.ClampMagnitude(_rotVec, steerAngle);
+
+            LeftWheel.localRotation = Quaternion.Euler(_rotVec);
+            RightWheel.localRotation = Quaternion.Euler(_rotVec);
+        }
         
-        transform.Rotate(Vector3.up * Input.GetAxis("Horizontal") * steerAngle * Time.deltaTime * _moveVec.magnitude);
-
-        _moveVec *= dragAmount;
-        _moveVec = Vector3.ClampMagnitude(_moveVec, maxSpeed);
-
-
-        _rotVec += new Vector3(0, Input.GetAxis("Horizontal"), 0);
-        _rotVec = Vector3.ClampMagnitude(_rotVec, steerAngle);
-
-        LeftWheel.localRotation = Quaternion.Euler(_rotVec);
-        RightWheel.localRotation = Quaternion.Euler(_rotVec);
     }
     public void Left()
     {
@@ -53,6 +57,19 @@ public class DenemeCarController : MonoBehaviour
     public void Stop()
     {
         horizontalMove = 0;
+
+    }
+    void Finish()
+    {
+
+        GameManager.Instance.gameState = GameManager.GameState.Next;
+
+    }
+
+    void Death()
+    {
+
+        GameManager.Instance.gameState = GameManager.GameState.Gameover;
 
     }
 
@@ -70,21 +87,7 @@ public class DenemeCarController : MonoBehaviour
             fail = true;
             Death();
         }
-
-
     }
 
-    void Finish()
-    {
-
-        GameManager.Instance.gameState = GameManager.GameState.Next;
-
-    }
-
-    void Death()
-    {
-
-        GameManager.Instance.gameState = GameManager.GameState.Gameover;
-
-    }
+       
 }
