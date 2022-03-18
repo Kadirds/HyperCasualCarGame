@@ -2,25 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class DenemeCarController : MonoBehaviour
 {
-    bool ToggleChange;
-    bool fail;
-    private float horizontalMove;
+    [SerializeField]private float moveSpeed = 200;
     [SerializeField] float carSpeed;
     [SerializeField] float maxSpeed;
     [HideInInspector]public float dragAmount = 0.3f;
+    public GameObject Car;
 
     public float steerAngle;
 
     Vector3 _rotVec;
     [HideInInspector] public Vector3 _moveVec;
-
     public Transform LeftWheel, RightWheel;
 
     public AudioManager AudioManager;
 
+    private float screenWidth;
+
+    private void Start()
+    {
+        screenWidth = Screen.width;
+    }
 
 
     void FixedUpdate()
@@ -44,20 +49,6 @@ public class DenemeCarController : MonoBehaviour
         }
         
         
-    }
-    public void Left()
-    {
-        horizontalMove = -1;
-
-    }
-    public void Right()
-    {
-        horizontalMove = 1;
-    }
-    public void Stop()
-    {
-        horizontalMove = 0;
-
     }
     void Finish()
     {
@@ -96,7 +87,6 @@ public class DenemeCarController : MonoBehaviour
 
         if (other.CompareTag("Obstacle"))
         {
-            fail = true;
             carSpeed = 0;
             Death();
         }
