@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class PartCollect : MonoBehaviour
 {
-    public CarController carSpeed;
+    public DenemeCarController CarController;
     [HideInInspector] public bool isScore60 = false;
 
 
     private void OnTriggerEnter(Collider collision)
     {
         this.gameObject.SetActive(false);
-        carSpeed.speed += 5;
+        CarController.carSpeed += 100;
+        CarController.maxSpeed += 100;
         ScoringSystem.score += 20;
 
     }

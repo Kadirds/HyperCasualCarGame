@@ -6,11 +6,9 @@ using UnityEngine.UI;
 
 public class DenemeCarController : MonoBehaviour
 {
-    [SerializeField]private float moveSpeed = 200;
-    [SerializeField] float carSpeed;
-    [SerializeField] float maxSpeed;
+    public float carSpeed;
+    public float maxSpeed;
     [HideInInspector]public float dragAmount = 0.3f;
-    public GameObject Car;
 
     public float steerAngle;
 
@@ -19,14 +17,6 @@ public class DenemeCarController : MonoBehaviour
     public Transform LeftWheel, RightWheel;
 
     public AudioManager AudioManager;
-
-    private float screenWidth;
-
-    private void Start()
-    {
-        screenWidth = Screen.width;
-    }
-
 
     void FixedUpdate()
     {
@@ -69,11 +59,7 @@ public class DenemeCarController : MonoBehaviour
 
             FindObjectOfType<AudioManager>().Stop("acc");
         }
-
-       
-
-       
-        
+              
     }
 
     private void OnTriggerEnter(Collider other)
