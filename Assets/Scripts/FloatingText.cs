@@ -14,12 +14,6 @@ public class FloatingText : MonoBehaviour
 
     void ShowFloatingText()
     {
-        if (CompareTag("LeftCollider"))
-        {
-
-        }
-
-
         Instantiate(FloatingTextPrefab, transform.position,Quaternion.identity);
     }
 }
