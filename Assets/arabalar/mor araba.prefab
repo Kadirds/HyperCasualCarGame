@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218350937860728573}
   m_Layer: 0
-  m_Name: vehicle2-blue
+  m_Name: mor araba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,7 +455,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3abd526163cbb8d4bac33ed0937fc622, type: 2}
+  - {fileID: 2100000, guid: bb0c8fb6506f8e645ae383fd5e00e8f1, type: 2}
   - {fileID: 2100000, guid: 092a54801e256404bb6dc38bd50d99b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
