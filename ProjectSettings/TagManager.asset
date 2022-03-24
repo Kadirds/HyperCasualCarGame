@@ -8,6 +8,8 @@ TagManager:
   - SedanCar
   - Ground
   - Obstacle
+  - RightCollider
+  - LeftCollider
   layers:
   - Default
   - TransparentFX
