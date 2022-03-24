@@ -16,17 +16,23 @@ D:/GameProjects/HyperCasualCarGame/CarGame
 Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< HEAD
+<<<<<<< HEAD
 58503
 Successfully changed project path to: D:/GameProjects/HyperCasualCarGame/CarGame
 D:/GameProjects/HyperCasualCarGame/CarGame
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 42.94 ms, found 2 plugins.
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 50717
 Successfully changed project path to: D:/GameProjects/HyperCasualCarGame/CarGame
 D:/GameProjects/HyperCasualCarGame/CarGame
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 114.17 ms, found 2 plugins.
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
@@ -44,7 +50,11 @@ Mono path[0] = 'D:/Unity/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
 <<<<<<< HEAD
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 =======
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
 >>>>>>> parent of 830eefd (Fontlar eklendi)
@@ -52,6 +62,7 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.001560 seconds.
 Native extension for WindowsStandalone target not found
@@ -64,6 +75,8 @@ Domain Reload Profiling:
 	ReloadAssembly (657ms)
 		BeginReloadAssembly (86ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Registered in 0.037117 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -74,12 +87,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1417ms)
 		BeginReloadAssembly (701ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (500ms)
 			LoadAssemblies (86ms)
@@ -96,6 +113,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (90ms)
 				ProcessInitializeOnLoadMethodAttributes (29ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 		EndReloadAssembly (611ms)
 			LoadAssemblies (718ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -110,6 +129,9 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (26ms)
 				ProcessInitializeOnLoadAttributes (115ms)
 				ProcessInitializeOnLoadMethodAttributes (42ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -117,6 +139,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.003040 seconds.
 Begin MonoManager ReloadAssembly
@@ -149,6 +172,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (216ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Registered in 0.067684 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -179,6 +204,9 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (76ms)
 				ProcessInitializeOnLoadAttributes (268ms)
 				ProcessInitializeOnLoadMethodAttributes (60ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -187,6 +215,7 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+<<<<<<< HEAD
 <<<<<<< HEAD
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
@@ -198,6 +227,8 @@ System memory in use after: 74.0 MB.
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2015.
 Total: 2.632600 ms (FindLiveObjects: 0.129900 ms CreateObjectMapping: 0.054900 ms MarkObjects: 2.341500 ms  DeleteObjects: 0.105400 ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
 Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -207,6 +238,7 @@ System memory in use after: 71.7 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2002.
 Total: 2.885300 ms (FindLiveObjects: 0.172100 ms CreateObjectMapping: 0.051000 ms MarkObjects: 2.552600 ms  DeleteObjects: 0.108400 ms)
+<<<<<<< HEAD
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -337,6 +369,8 @@ System memory in use after: 72.2 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2019.
 Total: 2.921900 ms (FindLiveObjects: 0.122800 ms CreateObjectMapping: 0.046600 ms MarkObjects: 2.707800 ms  DeleteObjects: 0.043700 ms)
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -346,11 +380,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+<<<<<<< HEAD
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 597.607778 seconds.
   path: Assets/Scripts/FloatingText.cs
   artifactKey: Guid(80a560a222e3e50438ab443b816bc60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -370,6 +408,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1102ms)
 		BeginReloadAssembly (132ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
   path: Assets/Scripts/TouchMoveCar.cs
   artifactKey: Guid(2ebbee9c7f8c5464eac6491e034ac8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/TouchMoveCar.cs using Guid(2ebbee9c7f8c5464eac6491e034ac8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6f7fb60fa8e0ae1fad9d1d80600961') in 0.064353 seconds 
@@ -459,11 +499,15 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1162ms)
 		BeginReloadAssembly (154ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			CreateAndSetChildDomain (31ms)
 		EndReloadAssembly (897ms)
@@ -474,6 +518,8 @@ Domain Reload Profiling:
 			RebuildScriptCaches (43ms)
 			SetupLoadedEditorAssemblies (343ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 			CreateAndSetChildDomain (39ms)
 		EndReloadAssembly (929ms)
 			LoadAssemblies (141ms)
@@ -482,11 +528,15 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (44ms)
 			SetupLoadedEditorAssemblies (355ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (87ms)
 				ProcessInitializeOnLoadAttributes (237ms)
@@ -506,6 +556,8 @@ System memory in use after: 72.2 MB.
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2021.
 Total: 2.550500 ms (FindLiveObjects: 0.124500 ms CreateObjectMapping: 0.052700 ms MarkObjects: 2.331700 ms  DeleteObjects: 0.040700 ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 				BeforeProcessingInitializeOnLoad (75ms)
 				ProcessInitializeOnLoadAttributes (252ms)
 				ProcessInitializeOnLoadMethodAttributes (18ms)
@@ -523,6 +575,7 @@ System memory in use after: 71.3 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2004.
 Total: 2.818800 ms (FindLiveObjects: 0.122500 ms CreateObjectMapping: 0.046500 ms MarkObjects: 2.604000 ms  DeleteObjects: 0.044700 ms)
+<<<<<<< HEAD
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -584,6 +637,8 @@ System memory in use after: 72.2 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2023.
 Total: 2.638500 ms (FindLiveObjects: 0.135200 ms CreateObjectMapping: 0.057200 ms MarkObjects: 2.425200 ms  DeleteObjects: 0.019900 ms)
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -597,6 +652,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.012300 seconds.
@@ -629,6 +685,8 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (77ms)
 				ProcessInitializeOnLoadAttributes (229ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Received Import Request.
   Time since last request: 445.441015 seconds.
   path: Assets/Scripts/DenemeCarController.cs
@@ -672,11 +730,15 @@ Domain Reload Profiling:
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (84ms)
 				ProcessInitializeOnLoadAttributes (199ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
@@ -749,6 +811,8 @@ System memory in use after: 72.2 MB.
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2027.
 Total: 2.773800 ms (FindLiveObjects: 0.192100 ms CreateObjectMapping: 0.078900 ms MarkObjects: 2.458000 ms  DeleteObjects: 0.043800 ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
@@ -760,6 +824,9 @@ System memory in use after: 71.3 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2006.
 Total: 2.603600 ms (FindLiveObjects: 0.119500 ms CreateObjectMapping: 0.046800 ms MarkObjects: 2.391500 ms  DeleteObjects: 0.044900 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -775,10 +842,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.002965 seconds.
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Received Import Request.
   Time since last request: 34.026410 seconds.
   path: Assets/Scripts/TouchMoveCar.cs
@@ -794,6 +864,9 @@ Start importing Assets/Scripts/TouchMoveCar.cs using Guid(2ebbee9c7f8c5464eac649
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.003284 seconds.
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -802,20 +875,27 @@ Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Completed reload, in  1.093 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1093ms)
 		BeginReloadAssembly (131ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 - Completed reload, in  1.116 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1117ms)
 		BeginReloadAssembly (150ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			CreateAndSetChildDomain (29ms)
 		EndReloadAssembly (901ms)
@@ -833,6 +913,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (234ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 			CreateAndSetChildDomain (38ms)
 		EndReloadAssembly (893ms)
 			LoadAssemblies (134ms)
@@ -848,6 +930,9 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (76ms)
 				ProcessInitializeOnLoadAttributes (216ms)
 				ProcessInitializeOnLoadMethodAttributes (9ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -855,6 +940,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+<<<<<<< HEAD
 <<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -865,6 +951,8 @@ System memory in use after: 72.2 MB.
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2029.
 Total: 2.870100 ms (FindLiveObjects: 0.178900 ms CreateObjectMapping: 0.058700 ms MarkObjects: 2.611300 ms  DeleteObjects: 0.020200 ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1556 Unused Serialized files (Serialized files now loaded: 0)
@@ -873,6 +961,9 @@ System memory in use after: 71.4 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2008.
 Total: 3.527400 ms (FindLiveObjects: 0.127000 ms CreateObjectMapping: 0.056600 ms MarkObjects: 3.316700 ms  DeleteObjects: 0.026100 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -888,6 +979,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.003673 seconds.
@@ -902,6 +994,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1075ms)
 		BeginReloadAssembly (131ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 Received Import Request.
   Time since last request: 7.571259 seconds.
   path: Assets/Scripts/TouchMoveCar.cs
@@ -921,12 +1015,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1004ms)
 		BeginReloadAssembly (128ms)
+<<<<<<< HEAD
+>>>>>>> parent of 830eefd (Fontlar eklendi)
+=======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (29ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (884ms)
 			LoadAssemblies (124ms)
@@ -957,6 +1055,8 @@ System memory in use after: 72.2 MB.
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2031.
 Total: 3.153500 ms (FindLiveObjects: 0.163400 ms CreateObjectMapping: 0.050200 ms MarkObjects: 2.901300 ms  DeleteObjects: 0.037700 ms)
 =======
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 		EndReloadAssembly (811ms)
 			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -985,6 +1085,7 @@ System memory in use after: 71.4 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2010.
 Total: 2.970700 ms (FindLiveObjects: 0.130600 ms CreateObjectMapping: 0.053400 ms MarkObjects: 2.758400 ms  DeleteObjects: 0.027000 ms)
+<<<<<<< HEAD
 >>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1282,6 +1383,8 @@ System memory in use after: 72.3 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2041.
 Total: 2.414000 ms (FindLiveObjects: 0.134100 ms CreateObjectMapping: 0.054200 ms MarkObjects: 2.206300 ms  DeleteObjects: 0.018700 ms)
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1294,6 +1397,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< HEAD
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
@@ -1921,5 +2025,7 @@ Received Import Request.
   artifactKey: Guid(7fc5e78f5bf33a04e9490bb5454fc968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Car/Cars/Sedan-car-01/wheel.fbx using Guid(7fc5e78f5bf33a04e9490bb5454fc968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125a791a71c03768a8ff35abf9d7f7d1') in 2.918985 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+>>>>>>> parent of 830eefd (Fontlar eklendi)
 =======
 >>>>>>> parent of 830eefd (Fontlar eklendi)
