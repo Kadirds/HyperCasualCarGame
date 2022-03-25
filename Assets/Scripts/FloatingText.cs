@@ -7,9 +7,10 @@ public class FloatingText : MonoBehaviour
 {
 	public GameObject FloatingTextPrefab;
 
+        
     private void OnTriggerEnter(Collider other)
     {
-        ShowFloatingText();
+        ShowFloatingText();        
     }
 
     void ShowFloatingText()
