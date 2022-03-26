@@ -10,7 +10,12 @@ public class FloatingText : MonoBehaviour
         
     private void OnTriggerEnter(Collider other)
     {
-        ShowFloatingText();        
+        if (GameManager.Instance.gameState == GameManager.GameState.Ingame)
+        {
+            ScoringSystem.score += 50;
+            ShowFloatingText();
+        }
+       
     }
 
     void ShowFloatingText()

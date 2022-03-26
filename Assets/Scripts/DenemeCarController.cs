@@ -68,11 +68,13 @@ public class DenemeCarController : MonoBehaviour
         {
             Finish();
             carSpeed = 0;
+            steerAngle = 0;
 
         }
 
         if (other.CompareTag("Obstacle"))
         {
+            steerAngle = 0;
             carSpeed = 0;
             Death();
         }
