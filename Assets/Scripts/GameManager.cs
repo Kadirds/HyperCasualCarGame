@@ -87,6 +87,7 @@ public class GameManager : Singleton<GameManager>
         {
             gameState = GameState.Ingame;
         }
+        
         if (SceneManager.sceneCount < 2)
         {
             SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
