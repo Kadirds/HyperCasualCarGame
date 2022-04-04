@@ -218,7 +218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &113592334
 Transform:
   m_ObjectHideFlags: 0
@@ -248,7 +248,6 @@ MonoBehaviour:
   carPrefabs:
   - {fileID: 6727753635168284901, guid: 4f2d773b1004575438fb8af342fe1dbd, type: 3}
   - {fileID: 4821208481204083935, guid: dfa45834da665cb43995049689a51b9f, type: 3}
-  - {fileID: 1932387052254670434, guid: c66314e28d437514098c2170cd7f0a5d, type: 3}
   spawnDelay: 5
 --- !u!1 &346504496
 GameObject:

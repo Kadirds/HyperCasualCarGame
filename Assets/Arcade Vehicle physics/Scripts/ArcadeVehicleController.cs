@@ -60,7 +60,7 @@ public class ArcadeVehicleController : MonoBehaviour
     private void Update()
     {
         horizontalInput = SimpleInput.GetAxis("Horizontal"); //turning input
-        verticalInput += accelaration * Time.deltaTime;     //accelaration input
+        verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);     //accelaration input
         Visuals();
         AudioManager();
 
