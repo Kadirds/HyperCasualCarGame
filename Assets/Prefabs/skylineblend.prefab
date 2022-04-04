@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1268580668997399768}
-  m_Layer: 0
+  - component: {fileID: -7271126891360348359}
+  m_Layer: 3
   m_Name: skylineblend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,6 +37,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7271126891360348359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932387052254670434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d69c44041501f4aab1c355410d67b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementMode: 0
+  GroundCheck: 0
+  drivableSurface:
+    serializedVersion: 2
+    m_Bits: 0
+  MaxSpeed: 0
+  accelaration: 0
+  turn: 0
+  rb: {fileID: 0}
+  carBody: {fileID: 0}
+  frictionCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  turnCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  frictionMaterial: {fileID: 0}
+  BodyMesh: {fileID: 0}
+  FrontWheels:
+  - {fileID: 0}
+  - {fileID: 0}
+  RearWheels:
+  - {fileID: 0}
+  - {fileID: 0}
+  carVelocity: {x: 0, y: 0, z: 0}
+  BodyTilt: 0
+  engineSound: {fileID: 0}
+  minPitch: 0
+  MaxPitch: 0
+  SkidSound: {fileID: 0}
+  skidWidth: 0
 --- !u!1 &2596931114724389539
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,7 +97,7 @@ GameObject:
   - component: {fileID: 4599666278954790971}
   - component: {fileID: 1368341513340591349}
   - component: {fileID: 3920467056423052699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: sagark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +180,7 @@ GameObject:
   - component: {fileID: 4667255170749409262}
   - component: {fileID: 100023323036287742}
   - component: {fileID: 6123685699286051009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: skylinee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +267,7 @@ GameObject:
   - component: {fileID: 574115348626106975}
   - component: {fileID: 1663200213610376439}
   - component: {fileID: 5114172315032927042}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +348,7 @@ GameObject:
   - component: {fileID: 7397847553396867717}
   - component: {fileID: 7578716211672529380}
   - component: {fileID: 881779855928551396}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: sagon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +431,7 @@ GameObject:
   - component: {fileID: 1645622979457876764}
   - component: {fileID: 3895556418583972382}
   - component: {fileID: 1364490038799727361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: solon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +514,7 @@ GameObject:
   - component: {fileID: 2738294743535333622}
   - component: {fileID: 4557796801552076840}
   - component: {fileID: 2238306704582960048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: solark
   m_TagString: Untagged
   m_Icon: {fileID: 0}

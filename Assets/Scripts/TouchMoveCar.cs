@@ -17,21 +17,7 @@ public class TouchMoveCar: MonoBehaviour
     void FixedUpdate()
     {
 
-        int i = 0;
-        while (i < Input.touchCount)
-        {
-            if (Input.GetTouch(i).position.x > screenWidth / 2)
-            {
-                //move right
-                RotateCar(1.0f);
-            }
-            if (Input.GetTouch(i).position.x < screenWidth / 2)
-            {
-                //move left
-                RotateCar(-1.0f);
-            }
-            ++i;
-        }
+        
     }
 
     public void RotateCar(float horizontalInput)

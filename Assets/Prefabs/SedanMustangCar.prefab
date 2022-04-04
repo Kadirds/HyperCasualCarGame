@@ -336,7 +336,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2728644821146172096}
-  - component: {fileID: 2728644821146172097}
   m_Layer: 0
   m_Name: WheelFL
   m_TagString: SedanCar
@@ -358,36 +357,6 @@ Transform:
   m_Father: {fileID: 2728644823112455720}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &2728644821146172097
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728644821146172127}
-  m_Center: {x: 0, y: 0.15, z: 0}
-  m_Radius: 0.32
-  m_SuspensionSpring:
-    spring: 100000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 2
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_Enabled: 1
 --- !u!1 &2728644821479086550
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,8 +366,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2728644821479086552}
-  - component: {fileID: 2728644821479086551}
-  - component: {fileID: 2728644821479086554}
   m_Layer: 0
   m_Name: SedanMustangCar
   m_TagString: Untagged
@@ -413,7 +380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2728644821479086550}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.8, y: -7.61, z: -67.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -421,42 +388,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2728644821479086551
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728644821479086550}
-  serializedVersion: 2
-  m_Mass: 1000
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &2728644821479086554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728644821479086550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19633be1a3871a4489fd823684dab25d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carSpeed: 1300
-  maxSpeed: 1500
-  dragAmount: 0.3
-  steerAngle: 4
-  _moveVec: {x: 0, y: 0, z: 0}
-  LeftWheel: {fileID: 7172810211734338029}
-  RightWheel: {fileID: 4478751948331391450}
-  AudioManager: {fileID: 0}
 --- !u!1 &2728644821846296871
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +686,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2728644821962943990}
-  - component: {fileID: 2728644821962943991}
   m_Layer: 0
   m_Name: WheelBL
   m_TagString: SedanCar
@@ -777,36 +707,6 @@ Transform:
   m_Father: {fileID: 2728644823112455720}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &2728644821962943991
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728644821962943989}
-  m_Center: {x: 0, y: 0.15, z: 0}
-  m_Radius: 0.32
-  m_SuspensionSpring:
-    spring: 40000
-    damper: 3000
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 2
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_Enabled: 1
 --- !u!1 &2728644821979121599
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +716,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2728644821979121568}
-  - component: {fileID: 2728644821979121569}
   m_Layer: 0
   m_Name: WheelFR
   m_TagString: SedanCar
@@ -838,36 +737,6 @@ Transform:
   m_Father: {fileID: 2728644823112455720}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &2728644821979121569
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728644821979121599}
-  m_Center: {x: 0, y: 0.15, z: 0}
-  m_Radius: 0.32
-  m_SuspensionSpring:
-    spring: 100000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 2
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_Enabled: 1
 --- !u!1 &2728644821982138120
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +746,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2728644821982138121}
-  - component: {fileID: 2728644821982138122}
   m_Layer: 0
   m_Name: WheelBR
   m_TagString: SedanCar
@@ -899,36 +767,6 @@ Transform:
   m_Father: {fileID: 2728644823112455720}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &2728644821982138122
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2728644821982138120}
-  m_Center: {x: 0, y: 0.15, z: 0}
-  m_Radius: 0.32
-  m_SuspensionSpring:
-    spring: 100000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 2
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_Enabled: 1
 --- !u!1 &2728644822797753427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1291,6 @@ GameObject:
   - component: {fileID: 7823635824740803019}
   - component: {fileID: 412872081082106899}
   - component: {fileID: 8568874484564122839}
-  - component: {fileID: 6744122504759398298}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1525,20 +1362,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6744122504759398298
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6744122504759398297}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2959467708922500008, guid: c4864c75d429a3649b1775485182849b, type: 3}
 --- !u!1 &6878137419978746677
 GameObject:
   m_ObjectHideFlags: 0

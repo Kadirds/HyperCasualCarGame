@@ -53,3 +53,12 @@ Update Mode: updateDependencies
 The following packages were updated:
   com.unity.collab-proxy from version 1.15.4 to 1.15.12
   com.unity.ide.visualstudio from version 2.0.12 to 2.0.14
+
+=== Sat Apr  2 13:09:36 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.6.11
+  com.unity.mathematics@1.2.5
