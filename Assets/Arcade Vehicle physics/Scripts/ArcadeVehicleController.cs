@@ -9,7 +9,6 @@ public class ArcadeVehicleController : MonoBehaviour
     public MovementMode movementMode;
     public groundCheck GroundCheck;
     public LayerMask drivableSurface;
-
     public float MaxSpeed, accelaration, turn;
     public Rigidbody rb, carBody;
     
@@ -60,7 +59,6 @@ public class ArcadeVehicleController : MonoBehaviour
     private void Update()
     {
         horizontalInput = SimpleInput.GetAxis("Horizontal"); //turning input
-        verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);     //accelaration input
         Visuals();
         AudioManager();
 
@@ -81,7 +79,7 @@ public class ArcadeVehicleController : MonoBehaviour
 
     public void FixedUpdate()
     {
-
+        verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);
         carVelocity = carBody.transform.InverseTransformDirection(carBody.velocity);
 
         if (Mathf.Abs(carVelocity.x) > 0)
@@ -217,6 +215,42 @@ public class ArcadeVehicleController : MonoBehaviour
             
         }
 
+    }
+    void Finish()
+    {
+        accelaration = 5;
+        GameManager.Instance.gameState = GameManager.GameState.Next;
+
+    }
+
+    void Death()
+    {
+
+        GameManager.Instance.gameState = GameManager.GameState.Gameover;
+
+        if (MaxSpeed == 0)
+
+        {
+            FindObjectOfType<AudioManager>().Play("fail");
+
+            FindObjectOfType<AudioManager>().Stop("acc");
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Finish"))
+        {
+            Finish();
+
+        }
+
+        if (other.CompareTag("Obstacle"))
+        {
+            verticalInput = 0;
+            turn = 0;
+            Death();
+        }
     }
 
 }

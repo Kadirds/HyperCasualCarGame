@@ -40,45 +40,9 @@ public class DenemeCarController : MonoBehaviour
         
         
     }
-    void Finish()
-    {
+    
 
-        GameManager.Instance.gameState = GameManager.GameState.Next;
-
-    }
-
-    void Death()
-    {
-
-        GameManager.Instance.gameState = GameManager.GameState.Gameover;
-
-        if (carSpeed==0)
-
-        {
-            FindObjectOfType<AudioManager>().Play("fail");
-
-            FindObjectOfType<AudioManager>().Stop("acc");
-        }
-              
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Finish"))
-        {
-            Finish();
-            carSpeed = 0;
-            steerAngle = 0;
-
-        }
-
-        if (other.CompareTag("Obstacle"))
-        {
-            steerAngle = 0;
-            carSpeed = 0;
-            Death();
-        }
-    }
+    
 
        
 }
