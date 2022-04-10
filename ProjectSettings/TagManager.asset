@@ -8,6 +8,7 @@ TagManager:
   - SedanCar
   - Ground
   - Obstacle
+  - InGameCanvas
   layers:
   - Default
   - TransparentFX

@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-
-    
+    public GameObject CarControllerCanvas;
     public GameObject StartP, InGameP, NextP, GameOverP;
     public float countDown = 1F;
 
@@ -66,15 +65,19 @@ public class GameManager : Singleton<GameManager>
         {
             case Panels.Startp:
                 StartP.SetActive(true);
+                CarControllerCanvas.SetActive(false);
                 break;
             case Panels.Ingamep:
                 InGameP.SetActive(true);
+                CarControllerCanvas.SetActive(true);
                 break;
             case Panels.Nextp:
                 NextP.SetActive(true);
+                CarControllerCanvas.SetActive(false);
                 break;
             case Panels.Gameoverp:
                 GameOverP.SetActive(true);
+                CarControllerCanvas.SetActive(false);
                 break;
             
         }
@@ -97,6 +100,8 @@ public class GameManager : Singleton<GameManager>
     void GameInGame()
     {
         PanelController(Panels.Ingamep);
+        
+        
     }
     void GameFinish()
     {

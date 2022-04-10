@@ -15,8 +15,8 @@ public class ScoringSystem : MonoBehaviour
 
     void Update() 
     {
-        scoreText.GetComponent<Text>().text = "" + score;
-        coinText.GetComponent<Text>().text = "" + coin;
+        scoreText.GetComponent<TextMesh>().text = "" + score;
+        coinText.GetComponent<TextMesh>().text = "" + coin;
         
     }
 }

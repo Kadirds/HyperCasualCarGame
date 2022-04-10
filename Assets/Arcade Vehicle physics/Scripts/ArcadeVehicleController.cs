@@ -40,9 +40,6 @@ public class ArcadeVehicleController : MonoBehaviour
     private float radius, horizontalInput, verticalInput;
     private Vector3 origin;
 
-    private float screenWidth;
-    public GameObject Car;
-
     [HideInInspector] public float sign;
     [HideInInspector] public float TurnMultiplyer;
 
@@ -53,7 +50,6 @@ public class ArcadeVehicleController : MonoBehaviour
         {
             Physics.defaultMaxAngularSpeed = 100;
         }
-        screenWidth = Screen.width;
 
     }
     private void Update()
@@ -79,64 +75,69 @@ public class ArcadeVehicleController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);
-        carVelocity = carBody.transform.InverseTransformDirection(carBody.velocity);
+        if (GameManager.Instance.gameState == GameManager.GameState.Ingame)
+        {
+            verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);
+            carVelocity = carBody.transform.InverseTransformDirection(carBody.velocity);
 
-        if (Mathf.Abs(carVelocity.x) > 0)
-        {
-            //changes friction according to sideways speed of car
-            frictionMaterial.dynamicFriction = frictionCurve.Evaluate(Mathf.Abs(carVelocity.x/100)); 
-        }
-        
-        
-        if (grounded())
-        {
-            //turnlogic
-            sign = Mathf.Sign(carVelocity.z);
-            TurnMultiplyer = turnCurve.Evaluate(carVelocity.magnitude/ MaxSpeed);
-            if (verticalInput > 0.1f || carVelocity.z >1)
+            if (Mathf.Abs(carVelocity.x) > 0)
             {
-                carBody.AddTorque(Vector3.up * horizontalInput * sign * turn*100* TurnMultiplyer);
-            }
-            else if (verticalInput < -0.1f || carVelocity.z < -1)
-            {
-                carBody.AddTorque(Vector3.up * horizontalInput * sign * turn*100* TurnMultiplyer);
+                //changes friction according to sideways speed of car
+                frictionMaterial.dynamicFriction = frictionCurve.Evaluate(Mathf.Abs(carVelocity.x / 100));
             }
 
-            //brakelogic
-            if (Input.GetAxis("Jump") > 0.1f)
+
+            if (grounded())
             {
-                rb.constraints = RigidbodyConstraints.FreezeRotationX;
+
+                //turnlogic
+                sign = Mathf.Sign(carVelocity.z);
+                TurnMultiplyer = turnCurve.Evaluate(carVelocity.magnitude / MaxSpeed);
+                if (verticalInput > 0.1f || carVelocity.z > 1)
+                {
+                    carBody.AddTorque(Vector3.up * horizontalInput * sign * turn * 100 * TurnMultiplyer);
+                }
+                else if (verticalInput < -0.1f || carVelocity.z < -1)
+                {
+                    carBody.AddTorque(Vector3.up * horizontalInput * sign * turn * 100 * TurnMultiplyer);
+                }
+
+                //brakelogic
+                if (Input.GetAxis("Jump") > 0.1f)
+                {
+                    rb.constraints = RigidbodyConstraints.FreezeRotationX;
+                }
+                else
+                {
+                    rb.constraints = RigidbodyConstraints.None;
+                }
+
+                //accelaration logic
+
+                if (movementMode == MovementMode.AngularVelocity)
+                {
+                    if (Mathf.Abs(verticalInput) > 0.1f)
+                    {
+                        rb.angularVelocity = Vector3.Lerp(rb.angularVelocity, carBody.transform.right * verticalInput * MaxSpeed / radius, accelaration * Time.deltaTime);
+                    }
+                }
+                else if (movementMode == MovementMode.Velocity)
+                {
+                    if (Mathf.Abs(verticalInput) > 0.1f && Input.GetAxis("Jump") < 0.1f)
+                    {
+                        rb.velocity = Vector3.Lerp(rb.velocity, carBody.transform.forward * verticalInput * MaxSpeed, accelaration / 10 * Time.deltaTime);
+                    }
+                }
+
+                //body tilt
+                carBody.MoveRotation(Quaternion.Slerp(carBody.rotation, Quaternion.FromToRotation(carBody.transform.up, hit.normal) * carBody.transform.rotation, 0.12f));
             }
             else
             {
-                rb.constraints = RigidbodyConstraints.None;
+                carBody.MoveRotation(Quaternion.Slerp(carBody.rotation, Quaternion.FromToRotation(carBody.transform.up, Vector3.up) * carBody.transform.rotation, 0.02f));
             }
-
-            //accelaration logic
-
-            if (movementMode == MovementMode.AngularVelocity)
-            {
-                if (Mathf.Abs(verticalInput) > 0.1f)
-                {
-                    rb.angularVelocity = Vector3.Lerp(rb.angularVelocity, carBody.transform.right * verticalInput * MaxSpeed/radius, accelaration * Time.deltaTime);
-                }
-            }
-            else if (movementMode == MovementMode.Velocity)
-            {
-                if (Mathf.Abs(verticalInput) > 0.1f && Input.GetAxis("Jump")<0.1f)
-                {
-                    rb.velocity = Vector3.Lerp(rb.velocity, carBody.transform.forward * verticalInput * MaxSpeed, accelaration/10 * Time.deltaTime);
-                }
-            }
-
-            //body tilt
-            carBody.MoveRotation(Quaternion.Slerp(carBody.rotation, Quaternion.FromToRotation(carBody.transform.up, hit.normal) * carBody.transform.rotation, 0.12f));
         }
-        else
-        {
-            carBody.MoveRotation(Quaternion.Slerp(carBody.rotation, Quaternion.FromToRotation(carBody.transform.up, Vector3.up) * carBody.transform.rotation, 0.02f));
-        }
+        
 
     }
     public void Visuals()
@@ -164,7 +165,6 @@ public class ArcadeVehicleController : MonoBehaviour
         
 
     }
-
     public bool grounded() //checks for if vehicle is grounded or not
     {
         origin = rb.position + rb.GetComponent<SphereCollider>().radius * Vector3.up;
