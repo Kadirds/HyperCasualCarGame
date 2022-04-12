@@ -3719,6 +3719,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625465454}
     m_Modifications:
+    - target: {fileID: 3413131866040811600, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: MaxDistance
+      value: 0.85636806
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811601, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: MaxDistance
+      value: 0.9962139
+      objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811603, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_Name
       value: SkyCar
