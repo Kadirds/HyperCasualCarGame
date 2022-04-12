@@ -54,6 +54,7 @@ public class ArcadeVehicleController : MonoBehaviour
     }
     private void Update()
     {
+        verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);
         horizontalInput = SimpleInput.GetAxis("Horizontal"); //turning input
         Visuals();
         AudioManager();
@@ -76,8 +77,7 @@ public class ArcadeVehicleController : MonoBehaviour
     public void FixedUpdate()
     {
         if (GameManager.Instance.gameState == GameManager.GameState.Ingame)
-        {
-            verticalInput = Mathf.Min(Input.GetAxis("Vertical") * 2 + 1, 1);
+        {           
             carVelocity = carBody.transform.InverseTransformDirection(carBody.velocity);
 
             if (Mathf.Abs(carVelocity.x) > 0)

@@ -3723,6 +3723,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkyCar
       objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_Size.x
+      value: 3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_Size.y
+      value: 2.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_Size.z
+      value: 8.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_Center.x
+      value: -0.304443
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_Center.y
+      value: -0.37269902
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_Center.z
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811605, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_RootOrder
       value: 8
