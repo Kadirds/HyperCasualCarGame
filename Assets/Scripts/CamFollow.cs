@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class CamFollow : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 offset;
-    [SerializeField] private float m_FollowSpeed;
+    [SerializeField] private Transform target;
+
+    [SerializeField] [Range(0.01f,1f)] private float smoothSpeed = 0.125f;
+
+    [SerializeField] private Vector3 offset;
+
+    private Vector3 velocity = Vector3.zero;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, target.position + offset, Time.deltaTime * m_FollowSpeed);
+        Vector3 desiredPosition = target.position + offset;
+        transform.position = Vector3.SmoothDamp(transform.position,desiredPosition, ref velocity, smoothSpeed);
     }
 }

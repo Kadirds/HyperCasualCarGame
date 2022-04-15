@@ -1773,8 +1773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1068771647}
-  offset: {x: -0.8, y: 13.6, z: -17.29}
-  m_FollowSpeed: 3
+  smoothSpeed: 0.125
+  offset: {x: -0.8, y: 10.38, z: -17.29}
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3452,7 +3452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &983378779982301396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3719,6 +3719,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625465454}
     m_Modifications:
+    - target: {fileID: 3413131865493734035, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131865493734045, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.13999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131865493734045, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -1.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413131865493734045, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.25000006
+      objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811600, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: MaxDistance
       value: 0.85636806
@@ -3733,7 +3749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_Size.x
-      value: 3.47
+      value: 3.2607954
       objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_Size.y
@@ -3745,7 +3761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_Center.x
-      value: -0.304443
+      value: -0.19984066
       objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_Center.y
@@ -3753,7 +3769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811604, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_Center.z
-      value: 0.1
+      value: 0.099999905
       objectReference: {fileID: 0}
     - target: {fileID: 3413131866040811605, guid: 8f3bbbf16457bdf408d0bfb92b0b5a4f, type: 3}
       propertyPath: m_RootOrder
