@@ -237,20 +237,24 @@ public class ArcadeVehicleController : MonoBehaviour
         }
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider col)
     {
-        if (other.CompareTag("Finish"))
+        if (col.CompareTag("Finish"))
         {
             Finish();
 
         }
-
-        if (other.CompareTag("Obstacle"))
+        if (col.CompareTag("Obstacle"))
         {
+            rb.velocity = Vector3.zero;
+            accelaration = 0;
+            MaxSpeed = 0;
+            rb.mass = 20000;
             verticalInput = 0;
             turn = 0;
             Death();
         }
-    }
 
+
+    }
 }

@@ -8,10 +8,8 @@ public class ScoringSystem : MonoBehaviour
     public GameObject scoreText;
     public GameObject coinText;
     public static float score;
+    private static float currentScore;
     public static int coin;
-
-    public bool isScore60 = false;
-
 
     void Update() 
     {

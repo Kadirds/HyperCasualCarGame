@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad5cf3c6b3c6f54b9873648804b5767, type: 3}
   m_Name: Shop
   m_EditorClassIdentifier: 
-  shopItems: []
+  shopItems:
+  - itemName: Mustang
+    isUnlocked: 0
+    unlockCost: 400
+    unlockedLevel: 0
+    carLevel:
+    - unlockCost: 0
+      speed: 50
+      accelaration: 18
+  - itemName: 
+    isUnlocked: 0
+    unlockCost: 0
+    unlockedLevel: 0
+    carLevel: []
+  - itemName: 
+    isUnlocked: 0
+    unlockCost: 0
+    unlockedLevel: 0
+    carLevel: []

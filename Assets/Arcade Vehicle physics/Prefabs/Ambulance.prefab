@@ -15470,7 +15470,7 @@ MonoBehaviour:
   GroundCheck: 0
   drivableSurface:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   MaxSpeed: 60
   accelaration: 15
   turn: 10
@@ -15542,7 +15542,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  frictionMaterial: {fileID: 13400000, guid: ce8f2e0169709cc4da4d8131aec6cef1, type: 2}
+  frictionMaterial: {fileID: 0}
   BodyMesh: {fileID: 7688793367263365529}
   FrontWheels:
   - {fileID: 7688793367228427346}
@@ -15557,6 +15557,8 @@ MonoBehaviour:
   MaxPitch: 3
   SkidSound: {fileID: 7688793368305064564}
   skidWidth: 0.13985014
+  sign: 0
+  TurnMultiplyer: 0
 --- !u!54 &7688793368305064566
 Rigidbody:
   m_ObjectHideFlags: 0

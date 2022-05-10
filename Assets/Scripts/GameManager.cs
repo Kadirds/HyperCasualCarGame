@@ -85,6 +85,7 @@ public class GameManager : Singleton<GameManager>
 
     void GameStart()
     {
+        ScoringSystem.score = 0;
         PanelController(Panels.Startp);
         if (Input.anyKeyDown)
         {
@@ -105,12 +106,13 @@ public class GameManager : Singleton<GameManager>
     }
     void GameFinish()
     {
+
         PanelController(Panels.Nextp);
     }
     void GameOver()
     {
         countDown -= Time.deltaTime;
-        if (countDown < 0)
+        if (countDown <= 0)
            PanelController(Panels.Gameoverp);
         
         
@@ -120,25 +122,30 @@ public class GameManager : Singleton<GameManager>
     {
         SceneManager.UnloadSceneAsync(asynSceneIndex);
         gameState = GameState.Start;
+        ScoringSystem.score = 0;
     }
 
     public void NextLevelButton()
     {
-        if (SceneManager.sceneCountInBuildSettings == asynSceneIndex + 1)
+        if (ScoreCondition.ScorePassed == true)
         {
-            SceneManager.UnloadSceneAsync(asynSceneIndex);
-            asynSceneIndex = 1;
-            SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
-        }
-        else
-        {
-            if (SceneManager.sceneCount > 1)
+            if (SceneManager.sceneCountInBuildSettings == asynSceneIndex + 1)
             {
                 SceneManager.UnloadSceneAsync(asynSceneIndex);
-                asynSceneIndex++;
+                asynSceneIndex = 1;
+                SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
             }
-            SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
+            else
+            {
+                if (SceneManager.sceneCount > 1)
+                {
+                    SceneManager.UnloadSceneAsync(asynSceneIndex);
+                    asynSceneIndex++;
+                }
+                SceneManager.LoadSceneAsync(asynSceneIndex, LoadSceneMode.Additive);
+            }
+            gameState = GameState.Start;
         }
-        gameState = GameState.Start;
+        
     }
 }
